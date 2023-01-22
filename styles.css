@@ -1,0 +1,60 @@
+body{
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+div#container {
+    width: 250px;
+    height: 250px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6,1fr);
+
+}
+
+div#displayed{
+    grid-column: span 4;
+    text-align: right;
+}
+
+button#add {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+button#subtract {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+button#multiply {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+button#divide {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+button#equals {
+    grid-column: span 2;
+    grid-row: 6;
+}
+
+button#clear {
+    grid-column: span 2;
+    grid-row: 6;
+    
+} 
+
+button#b0 {
+    grid-column: span 2;
+}
+
+
